@@ -1,0 +1,16 @@
+{
+  "name": "geri",
+  "version": "1.0.0",
+  "description": "Basic utility functions using ramda",
+  "main": "index.js",
+  "repository": "https://github.com/thrugl/geri",
+  "author": "Thor Long",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ramda": "^0.27.1"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.27.15"
+  }
+}
