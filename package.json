@@ -2,15 +2,22 @@
   "name": "geri",
   "version": "1.0.0",
   "description": "Basic utility functions using ramda",
-  "main": "index.js",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
   "repository": "https://github.com/thrugl/geri",
   "author": "Thor Long",
   "license": "MIT",
-  "private": false,
+	"private": false,
+	"scripts": {
+		"build": "tsc"
+	},
+	"prepare" : "npm run build",
+	"files": ["lib/**/*"],
   "dependencies": {
     "ramda": "^0.27.1"
   },
   "devDependencies": {
-    "@types/ramda": "^0.27.15"
+    "@types/ramda": "^0.27.15",
+    "typescript": "^4.0.2"
   }
 }
