@@ -1,10 +1,9 @@
-import { isEmpty, isNil, curry } from 'ramda'
+import { anyPass, isEmpty, isNil } from 'ramda'
+import isFalse from './isFalse'
 
-// Returns true if argument is empty, null, undefined or false
-// but 0 will return true
+// Returns true if argument is empty, null, undefined, NaN or false
+// but 0 will return false
 
-const isNada = curry(function (x: any): boolean {
-	return isEmpty(x) || isNil(x) || x === false
-})
+const isNada = anyPass([isEmpty, isNil, isFalse, isNaN])
 
 export default isNada

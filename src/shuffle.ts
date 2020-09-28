@@ -1,8 +1,8 @@
-import { curry, length } from 'ramda'
+import { length } from 'ramda'
 
 // returns a shuffled copy of input array
 
-const shuffle = curry(function (a: any[]): any[] {
+const shuffle = function (a: any[]): any[] {
 	const b: any[] = []
 	let i = -1
 
@@ -12,6 +12,6 @@ const shuffle = curry(function (a: any[]): any[] {
 		b[x] = a[i]
 	}
 	return b
-})
+}
 
 export default shuffle

@@ -1,13 +1,7 @@
-import { toUpper, head, tail, o, compose, join, juxt } from 'ramda'
+import { toUpper, replace } from 'ramda'
 
 // capitalizes first character in a string
 
-const capitalize = compose(
-	join(''),
-	juxt([ 
-		o(toUpper, head), 
-		tail 
-	])
-)
+const capitalize = replace(/^./, toUpper)
 
 export default capitalize
