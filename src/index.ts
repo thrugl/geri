@@ -17,6 +17,7 @@ import isMany from './isMany'
 import isNada from './isNada'
 import isNegative from './isNegative'
 import isPositive from './isPositive'
+import isPropTrue from './isPropTrue'
 import isShort from './isShort'
 import isShorter from './isShorter'
 import isTrue from './isTrue'
@@ -58,6 +59,7 @@ export {
 	isNada,
 	isNegative,
 	isPositive,
+	isPropTrue,
 	isShort,
 	isShorter,
 	isTrue,

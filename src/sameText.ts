@@ -1,7 +1,7 @@
 import strip from './strip'
 import args  from './args'
 
-import { apply, equals, o, compose, toUpper, map, binary, curry, Pred, SafePred } from 'ramda'
+import { apply, equals, o, compose, toUpper, map, binary, curry } from 'ramda'
 
 const sameText = curry( 
 	binary(
